@@ -9,10 +9,10 @@ const Dashboard: React.FC = () => {
   return (
     <Styled.Container>
       <DashboardMenu />
-      <Styled.HeaderView>
+      <Styled.MainContainer>
         <Header />
         <DashboardRoutes />
-      </Styled.HeaderView>
+      </Styled.MainContainer>
     </Styled.Container>
   );
 };

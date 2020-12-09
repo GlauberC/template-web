@@ -1,10 +1,11 @@
 import React from 'react';
+import * as Styled from './styles';
 
 const Header: React.FC = () => {
   return (
-    <div>
+    <Styled.Container>
       <p>header</p>
-    </div>
+    </Styled.Container>
   );
 };
 
