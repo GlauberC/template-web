@@ -4,31 +4,43 @@ import { colors } from './colors';
 
 export default createGlobalStyle`
   * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background: ${colors.background};
-    color: ${colors.text1};
-    -webkit-font-smoothing: antialiased;
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
   }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
 
-  body, input, button {
-    font-family: "Roboto Slab", serif;
-    font-size: 16px;
-  }
+body {
+  background: ${colors.background};
+  color: ${colors.text2};
+}
 
-  h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 500;
-  }
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Roboto", sans-serif;
+}
 
-  button {
-    cursor: pointer;
-  }
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 `;
